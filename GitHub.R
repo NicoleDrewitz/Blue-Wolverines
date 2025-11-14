@@ -34,6 +34,8 @@ mass_flipper <- ggplot(data = penguins,
 
 mass_flipper
 
+# editing in github
+
 # =============================================================================
 # PCA https://allisonhorst.github.io/palmerpenguins/articles/pca.html
 # =============================================================================
