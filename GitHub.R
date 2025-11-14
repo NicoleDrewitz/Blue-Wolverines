@@ -34,6 +34,8 @@ mass_flipper <- ggplot(data = penguins,
 
 mass_flipper
 
+# Generate readme file
+usethis::use_readme_rmd()
 # =============================================================================
 # PCA https://allisonhorst.github.io/palmerpenguins/articles/pca.html
 # =============================================================================
@@ -193,3 +195,9 @@ Pim <- map(ptch,as.vector) %>% do.call(rbind,.)
 Pc <- map(ptch.c,as.vector) %>% do.call(rbind,.)
 nn <- nabor::knn(Pc,Pim,1)$nn.idx
 mutate(gr,sym=syms[nn]) %$% plot(x,y,pch=sym,cex=.2,ylim=c(height(im),1))
+
+# =============================================================================
+# fork another persons GitHub repo
+
+library(usethis)
+create_from_github("ziire/orange_puffin", fork = TRUE)
