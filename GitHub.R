@@ -193,3 +193,7 @@ Pim <- map(ptch,as.vector) %>% do.call(rbind,.)
 Pc <- map(ptch.c,as.vector) %>% do.call(rbind,.)
 nn <- nabor::knn(Pc,Pim,1)$nn.idx
 mutate(gr,sym=syms[nn]) %$% plot(x,y,pch=sym,cex=.2,ylim=c(height(im),1))
+
+
+## I am trying to push!!
+mutate(gr,sym=syms[nn]) %$% plot(x,y,pch=sym,cex=.2,ylim=c(height(im),1.4))
